@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="calculator">
+        <h1>Order Cost Calculator</h1>
+        <form id="orderForm">
+            <label for="product">Select a product:</label>
+            <select id="product" name="product">
+                <option value="10">Notebook — $10.00</option>
+                <option value="25">Backpack — $25.00</option>
+                <option value="5">Pen — $5.00</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" inputmode="numeric">
+
+            <button type="submit">Calculate total</button>
+        </form>
+        <p id="message" aria-live="polite"></p>
+    </main>
+</body>
+</html>
